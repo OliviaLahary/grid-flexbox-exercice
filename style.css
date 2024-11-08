@@ -1,0 +1,386 @@
+@font-face {
+font-family: "DMSans";
+src: url("assets/fonts/static/DMSans-Regular.ttf");
+font-weight: 100;
+}
+
+@font-face {
+font-family: "DMSans-Italic";
+src: url("assets/fonts/DMSans-Italic-VariableFont_opsz\,wght.ttf");
+font-weight: 400;
+} 
+
+* {
+padding: 0;
+margin: 0;
+}
+
+body {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+background-color: rgb(238, 238, 238);
+}
+
+.container {
+margin-top: rem;
+width: 80%;
+}
+
+.card {
+margin-bottom: 2rem;
+/* border: 1px solid red; */
+border-radius: 10px;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+-ms-border-radius: 10px;
+-o-border-radius: 10px;
+flex-shrink: 1;
+box-sizing: border-box;
+}
+
+
+/* bloc social */
+
+.card-social {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+max-width: 100%;
+background-color: hsl(256, 67%, 59%)
+;
+color: hsl(0, 0%, 100%);
+font-family: "DMSans";
+font-weight: 100;
+padding: 2rem;
+}
+.card-social .social {
+text-align: center;
+margin-bottom: 1.5rem;
+font-size: 1.5rem;
+line-height: 1;
+}
+.card-social span {
+color: hsl(39, 100%, 71%);
+}
+.card-social .social-img {
+text-align: center;
+}
+.card-social .social-img img {
+width: 60%;
+}
+.card-social .social-text {
+color: hsl(31, 66%, 93%);
+}
+.italic{
+    font-family: "DMSans-Italic";
+
+}
+
+
+/* bloc manage */
+
+
+
+.card-manage {
+background-color: #fff;
+padding: 1rem;
+font-family: "DMSans";
+font-size: 0.8rem;
+}
+.card-manage .manage-img img {
+width: 100%;
+}
+.card-manage h2 {
+line-height: 1;
+}
+
+/* bloc maintain  */
+.card-maintain {
+padding: 1rem;
+padding-bottom: 0;
+font-family: "DMSans";
+font-size: 0.8rem;
+background-color: hsl(39, 100%, 71%);
+overflow: hidden;
+}
+.card-maintain h2 {
+line-height: 1;
+margin-bottom: 1rem;
+}
+.card-maintain .maintain-img img {
+width: 70%;
+margin-bottom: -1rem;
+}
+
+
+/* bloc schedule */
+
+.card-schedule {
+background-color: hsl(254, 88%, 90%);
+font-family: "DMSans";
+font-size: 0.8rem;
+padding-top: 2rem;
+padding-bottom: 2rem;
+padding-left: 1rem;
+padding-right: 1rem;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+.card-schedule h2 {
+line-height: 1;
+}
+.card-schedule .img {
+margin-top: 1rem;
+margin-bottom: 1rem;
+}
+.card-schedule img {
+width: 100%;
+}
+.card-schedule .schedule-text {
+margin: 1rem 0;
+text-align: center;
+font-size: 1.3rem;
+line-height: 1;
+}
+
+
+/* bloc grow followers */
+
+.grow {
+background-color: hsl(256, 67%, 59%);
+padding-top: 2rem;
+padding-bottom: 2rem;
+padding-right: 4rem;
+padding-left: 4rem;
+box-sizing: border-box;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+font-family: "DMSans";
+font-weight: 100;
+}
+.grow img {
+width: 100%;
+}
+.grow h2 {
+text-align: center;
+color: #fff;
+line-height: 1;
+margin-top: 2rem;
+}
+
+
+/* bloc audience */
+
+.audience {
+background-color: #fff;
+padding: 1rem;
+font-family: "DMSans";
+}
+.audience h2 {
+font-size: 2.7rem;
+}
+.audience p {
+margin-bottom: 1rem;
+font-size: 1.2rem;
+font-weight: medium;
+}
+.audience img {
+width: 67%;
+}
+
+/* bloc create */
+
+.create {
+background-color: hsl(31, 66%, 93%);
+padding: 2rem;
+font-family: "DMSans";
+}
+.create h2 {
+line-height: 1;
+margin-bottom: 1rem;
+font-size: 1.8rem;
+}
+.create span {
+font-style: italic;
+color: hsl(256, 67%, 59%);
+}
+.create img {
+width: 70%;
+}
+
+
+/* write */
+
+.write {
+background-color: hsl(39, 100%, 71%);
+padding: 1.5rem;
+font-family: "DMSans";
+}
+.write h2 {
+line-height: 1;
+margin-bottom: 2rem;
+}
+.write img {
+width: 80%;
+}
+
+
+
+.attribution {
+margin-bottom: 1rem;
+}
+
+
+
+
+
+@media screen and (min-width: 992px) {
+    .container {
+        width: 80vw;
+        height: max-content;
+        display: flex;
+        /* align-items: center; */
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        margin: 1rem;
+    }
+
+    .column1 {
+        width: 78%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .column2 {
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .wrapper1 {
+        display: flex;
+        justify-content: space-between;
+        height: 68%;
+    }
+
+    .wrapper2 {
+        width: 100%;
+        height: 30%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .wrapper-mini {
+        width: 68%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .wrapper-square {
+        display: flex;
+        justify-content: space-between;
+        height: 50%;
+    }
+
+    .card-social {
+        margin-bottom: 0;
+        height: 47%;
+    }
+
+    .card-manage,
+    .card-maintain {
+        width: 48%;
+        margin-bottom: 0;
+        font-size: 1.1rem;
+    }
+    .card-maintain img {
+        width: 100%;
+    }
+
+
+    /* bloc schedule */
+
+    .card-schedule {
+        width: 30%;
+        margin-bottom: 0;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        overflow: hidden;
+    }
+    .card-schedule h2 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+    .card-schedule .schedule-img {
+        width: 140%;
+        height: 140%;
+    }
+    .card-schedule img {
+        height: 100%;
+        width: 100%;
+    }
+    .card-schedule .schedule-text {
+        text-align: left;
+        font-size: 1.2rem;
+    }
+
+    /* bloc grow */
+
+    .grow {
+        width: 64.5%;
+        margin-bottom: 0;
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+    }
+    .grow .grow-img {
+        width: 45%;
+        margin: 1rem;
+    }
+
+    .grow h2 {
+        width: 60%;
+        font-size: 2rem;
+        text-align: start;
+        margin-top: 0;
+    }
+    /* bloc audience */
+
+    .audience {
+        width: 33%;
+        margin-bottom: 0;
+    }
+    .audience p {
+        font-size: 1rem;
+    }
+    .audience img {
+        width: 80%;
+    }
+
+    .create,
+    .write{
+        margin-bottom: 0;
+        height: 49%;
+    }
+    .write .img {
+        width: 110%;
+    }
+    .create .create-img img,
+    .write img {
+        width: 100%;
+
+    }
+}
