@@ -24,7 +24,7 @@ background-color: rgb(238, 238, 238);
 }
 
 .container {
-margin-top: rem;
+margin-top: 5rem;
 width: 80%;
 }
 
@@ -95,6 +95,7 @@ width: 100%;
 }
 .card-manage h2 {
 line-height: 1;
+
 }
 
 /* bloc maintain  */
@@ -238,18 +239,17 @@ margin-bottom: 1rem;
 }
 
 
-
+/* desktop */
 
 
 @media screen and (min-width: 992px) {
     .container {
-        width: 80vw;
+        width: 70vw;
         height: max-content;
         display: flex;
-        /* align-items: center; */
         justify-content: space-between;
         flex-direction: row-reverse;
-        margin: 1rem;
+        
     }
 
     .column1 {
@@ -303,6 +303,10 @@ margin-bottom: 1rem;
         margin-bottom: 0;
         font-size: 1.1rem;
     }
+    .card-manage h2,
+    .card-maintain h2{
+        font-size: 3rem;
+    }
     .card-maintain img {
         width: 100%;
     }
@@ -351,9 +355,10 @@ margin-bottom: 1rem;
         margin: 1rem;
     }
 
-    .grow h2 {
+    .grow h2,
+    .audience h2 {
         width: 60%;
-        font-size: 2rem;
+        font-size: 3rem;
         text-align: start;
         margin-top: 0;
     }
@@ -374,6 +379,10 @@ margin-bottom: 1rem;
     .write{
         margin-bottom: 0;
         height: 49%;
+    }
+    .create h2,
+    .write h2{
+        font-size: 2rem;
     }
     .write .img {
         width: 110%;
